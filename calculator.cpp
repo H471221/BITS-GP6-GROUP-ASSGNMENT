@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> /*flag = where I left last time*/
 
 int main() {
 
@@ -6,9 +6,9 @@ int main() {
     int temp, max;
     int j, k;
     int numbers[10];
-    int size = sizeof(numbers)/sizeof(int);
+    int size = sizeof(numbers)/sizeof(int); //flag 
 
-    std::cout << "Welcome to sorting calculator!" << std::endl;         
+    std::cout << "Welcome to sorting calculator!" << std::endl;     //Calculator interface
     std::cout << "Please enter 10 random numbers. " << size << std::endl;
 
     for(int i = 0; i < size; i++)                   
@@ -18,9 +18,9 @@ int main() {
 
     max = numbers[0];
     
-    for(int i = 0; i < size;i++ )
+    for(int i = 0; i < size;i++ )   //nested for start here
     {
-        for(k=i+1; k < size; k++)
+        for(k=i+1; k < size; k++)   //
         {
             if (numbers[i] > numbers[k])
             {
