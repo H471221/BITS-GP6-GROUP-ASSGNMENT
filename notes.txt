@@ -1,0 +1,18 @@
+What is GIT:
+- allows better teamwork with ur teams
+- work parallel with teammates (coding serentak)
+
+What is GITHUB:
+- platform to store code in cloud
+- GITHUB is GUI, meanwhile GIT is CLI
+
+GIT terms:
+local repository - store code, on hardrive
+remote repo - main repo, stored in cloud (online)
+commit - save code progress locally
+push - upload code to remote repository
+fetch - download contents from remote repo
+branch - separate version from main/master repository
+pull request - ask main/master code to merge repository 
+clone - copy repo from cloud to local
+fork - copy remote repo (online)
