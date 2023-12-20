@@ -23,7 +23,7 @@ int main() {
     {
         for(k=i+1; k < size; k++)   //set 2 comparer, arrary 'i' and 'k' where value array k is bigger by 1 than array 'i' 
         {
-            if (numbers[i] > numbers[k])    //if array 'i' bigger than 'k'
+            if (numbers[i] > numbers[k])    //if array 'i' bigger than 'k' NOTE: if the '>' symbol flipped, it will become descending order
             {
                 temp = numbers[i];      
                 numbers[i] = numbers[k];
