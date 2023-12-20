@@ -6,25 +6,26 @@ int main() {
     int temp, max;
     int j, k;
     int numbers[10];
-    int size = sizeof(numbers)/sizeof(int); //flag 
+    int size = sizeof(numbers)/sizeof(int);     //get array size which is 10
 
-    std::cout << "Welcome to sorting calculator!" << std::endl;     //Calculator interface
-    std::cout << "Please enter 10 random numbers. " << size << std::endl;
+    std::cout << "Welcome to sorting calculator!" << std::endl;     //Calculator interface START
+    std::cout << "Please enter 10 random numbers. " << size << std::endl;   
 
-    for(int i = 0; i < size; i++)                   
+    for(int i = 0; i < size; i++)   //Enter 10 random numbers and store it in array variable numbers[i]
         std::cin >> numbers[i];
 
-    std::cout << "Sorting your inputs... " << std::endl;
+    std::cout << "Sorting your inputs... " << std::endl;  
 
-    max = numbers[0];
+    max = numbers[0];      //int max = value of numbers[0]
     
-    for(int i = 0; i < size;i++ )   //nested for start here
+    //numbers sorting start here 
+    for(int i = 0; i < size; i++ )   
     {
-        for(k=i+1; k < size; k++)   //
+        for(k=i+1; k < size; k++)   //set 2 comparer, arrary 'i' and 'k' where value array k is bigger by 1 than array 'i' 
         {
-            if (numbers[i] > numbers[k])
+            if (numbers[i] > numbers[k])    //if array 'i' bigger than 'k'
             {
-                temp = numbers[i];
+                temp = numbers[i];      
                 numbers[i] = numbers[k];
                 numbers[k] = temp;
             }
